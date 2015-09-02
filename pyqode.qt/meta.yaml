@@ -30,9 +30,11 @@ requirements:
   build:
     - python
     - setuptools
-
+    - pyqt
+    
   run:
     - python
+    - pyqt
 
 test:
   # Python imports

@@ -2,6 +2,9 @@
 
 $PYTHON setup.py install
 
+build:
+    noarch_python: True
+
 # Add more build steps here, if they are necessary.
 
 # See
