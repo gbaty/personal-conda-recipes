@@ -17,3 +17,6 @@ requirements:
   
   run:
     - m4 # [linux]
+
+extra:
+  note: bison is not relocatable, that means that bison --print-datadir return wrong dir but you can define an env var BISON_PKGDATADIR to change it. Search "bison relocatable"
