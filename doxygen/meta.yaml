@@ -1,0 +1,31 @@
+package:
+  name: doxygen
+  version: "1.8.10"
+
+source:
+  git_rev: Release_1_8_10
+  git_url: https://github.com/doxygen/doxygen
+
+build:
+  number: 0
+#  features:
+#    - sqlite
+
+  #script_env:
+   #- BISON_PKGDATADIR
+
+requirements:
+  build:
+    - m4
+    - cmake
+    - bison
+    - flex
+
+test:
+  commands:
+    - doxygen -v
+    
+about:
+    home: http://www.stack.nl/~dimitri/doxygen/index.html
+    license: GPLv3
+    summary: 'Doxygen is the de facto standard tool for generating documentation from annotated C++ sources'
