@@ -16,6 +16,7 @@ requirements:
   build:
     - cmake                                  [linux]
     - python
+    - qt4
   run:
     - python
 
