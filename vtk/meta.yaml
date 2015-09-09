@@ -3,26 +3,23 @@ package:
   version: 6.2.0
 
 source:
-  url: http://www.vtk.org/files/release/6.2/VTK-6.2.0.tar.gz [not win]
-  fn: VTK-6.2.0.tar.gz                      [not win]
-  md5: 4790f8b3acdbc376997fbdc9d203f0b7     [not win]
-  fn: vtkpython-6.2.0-Windows-32bit.exe     [win32]
-  fn: vtkpython-6.2.0-Windows-64bit.exe     [win64]
+  git_rev: "v6.2.0"
+  git_url: https://gitlab.kitware.com/vtk/vtk.git
 
 build:
-  number: 1                                  [linux]
+  number: 0
 
 requirements:
   build:
-    - cmake                                  [linux]
+    - cmake
     - python
-    - qt4
+    - qt
   run:
     - python
 
 test:
   commands:
-    - vtkpython -h                           [unix]
+    - vtkpython -h
   imports:
     - vtk
 
