@@ -1,0 +1,33 @@
+package:
+  name: su2
+  version: "4.0.1"
+
+source:
+  git_rev: "v4.0.1"
+  git_url: https://github.com/su2code/SU2
+
+build:
+  number: 0
+  track_features:
+    - static_libs
+    - shared_libs
+    
+requirements:
+  build:
+    - feature_static_libs
+    - feature_shared_libs
+    - python
+    - zlib
+    - hdf5 1.8.15 all
+    - mpich2
+  
+  run:
+    - python
+    - zlib
+    - hdf5
+    - mpich2
+    
+about:
+    home: http://su2.stanford.edu/
+    license: "LGPL v2.1"
+    summary: 'SU2 is a suite of open-source software tools written in C++ for the numerical solution of partial differential equations (PDE) and performing PDE constrained optimization. '

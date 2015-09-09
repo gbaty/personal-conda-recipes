@@ -1,0 +1,25 @@
+package:
+  name: hdf5
+  version: "1.8.15"
+
+source:
+  fn: hdf5-1.8.15-patch1.tar.bz2
+  url: http://www.hdfgroup.org/ftp/HDF5/current/src/hdf5-1.8.15-patch1.tar.bz2
+  md5: 3c0d7a8c38d1abc7b40fc12c1d5f2bb8
+  
+build:
+  number: 1
+  string: all
+  features:
+    - static_libs
+    - shared_libs
+
+requirements:
+  build:
+    - zlib
+  run:
+    - zlib
+
+about:
+  home: http://www.hdfgroup.org/HDF5/
+  license: BSD-style (http://www.hdfgroup.org/ftp/HDF5/current/src/unpacked/COPYING)

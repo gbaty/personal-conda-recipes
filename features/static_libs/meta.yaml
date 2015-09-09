@@ -1,0 +1,7 @@
+package:
+  name: feature_static_libs
+  version: 1.0
+
+build:
+  track_features:
+    - static_libs

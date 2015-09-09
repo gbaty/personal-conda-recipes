@@ -9,7 +9,7 @@ source:
 build:
   number: 0
   features:
-    - doxywizard
+    - qtgui
 
 requirements:
   build:
